@@ -39,18 +39,18 @@ public class RetrofitTestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_retrofit);
-//        getSupportActionBar().getCustomView();
-
         patientRecyclerView = (RecyclerView) findViewById(R.id.patientRecycleView);
         patientRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         progressBar = (ProgressBar) findViewById(R.id.pgbar);
+
+
+        Log.i(LOG_TAG,"URL from staging and production" +Hosts.BASE_URL);
         fetchPatientList();
 
     }
 
     private void fetchPatientList() {
         progressBar.setVisibility(View.VISIBLE);
-
         Retrofit retrofit = new Retrofit.Builder().baseUrl(Constants.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
@@ -91,7 +91,10 @@ public class RetrofitTestActivity extends AppCompatActivity {
         patientRecyclerView.setAdapter(adapter);
     }
 
-
+    /**
+     * Creates dummy data to fetch patient list...
+     * @return
+     */
     private PatientSearchHolder createDummyData() {
 
         PatientSearchHolder patient = new PatientSearchHolder();
