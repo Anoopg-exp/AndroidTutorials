@@ -74,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         title1 = (TextView) findViewById(R.id.main_title1);
-        title2 = (TextView) findViewById(R.id.main_title1);
-        title3 = (TextView) findViewById(R.id.main_title1);
+        title2 = (TextView) findViewById(R.id.main_title2);
+        title3 = (TextView) findViewById(R.id.main_title3);
         phoneNumberEditText = (EditText) findViewById(R.id.phoneNumber);
     }
 
