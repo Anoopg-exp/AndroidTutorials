@@ -3,8 +3,14 @@ test:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
     - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
 
+general:
+  artifacts:
+    ­ "**/build/outputs/apk"
+    ­ "**/build/outputs/mapping/**/**/mapping.txt"	
+
 deployment:
   develop:
     branch: develop
     commands:
       - sudo bash ./deploy_dev.sh
+
