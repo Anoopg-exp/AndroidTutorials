@@ -5,18 +5,13 @@ android {
 
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
-    def appVersion
-    def appName
 
     defaultConfig {
         applicationId "com.dbflowtest.com.dbflowtest"
         minSdkVersion 18
         targetSdkVersion 23
         versionCode 1
-        versionName "2(50)"
-        appVersion = "v_${versionCode}.${versionName}"
-        appName = "billingapp_${appVersion}"
-        setProperty("archivesBaseName", appName)
+        versionName "2(51)"
     }
 
 
@@ -24,11 +19,9 @@ android {
 
        staging {
            applicationId "com.dbflowtest.com.dbflowtest.staging"
-           versionName appVersion
        }
        production {
            applicationId "com.dbflowtest.com.dbflowtest.production"
-           versionName appVersion
        }
 
    }
