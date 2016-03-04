@@ -5,7 +5,7 @@ test:
 
 general:
   artifacts:
-    - "D:\Development\TutorialsFromRepo\DBFlowTest\app\build\outputs\apk\"
+    - /home/ubuntu/DBFlowTest/app/build/outputs/apk/
 
 deployment:
   develop:
