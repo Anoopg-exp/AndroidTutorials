@@ -4,6 +4,6 @@ test:
     - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
 deployment:
   hockey:
-    branch: master
+    branch: master,develop
     commands:
       - source deployHockeyApp.sh && uploadToHockeyApp
