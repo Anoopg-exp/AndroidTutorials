@@ -1,7 +1,18 @@
+PRODUCT_NAME=hockey
+NOTIFY="True"
+NOTES="Build uploaded via the upload API"
+echo "Downloading File..."
+echo "Archives: ${CIRCLE_ARTIFACTS}"
+if [ "$1" ]
+then
+NOTES="$1"
+fi
 if [ ! ­f "app/build/outputs/apk/app­debug.apk" ]
- echo "app/build/outputs/apk/app­debug.apk not found!"
+then
+echo "app/build/outputs/apk/app­debug.apk not found!"
 else
- echo "Uploading to HockeyApp..."
+echo "Uploading to HockeyApp..."
+
 curl \
 -F "status=2" \
 -F "notify=0" \
