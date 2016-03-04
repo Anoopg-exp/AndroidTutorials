@@ -1,3 +1,8 @@
+if [ ! ­f "app/build/outputs/apk/app­debug.apk" ]
+then
+ echo "app/build/outputs/apk/app­debug.apk not found!"
+else
+ echo "Uploading to HockeyApp..."
 curl \
 -F "status=2" \
 -F "notify=0" \
