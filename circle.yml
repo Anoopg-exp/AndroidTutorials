@@ -5,8 +5,7 @@ test:
 
 general:
   artifacts:
-    ­ "**/build/outputs/apk"
-    ­ "**/build/outputs/mapping/**/**/mapping.txt"	
+    - "D:\Development\TutorialsFromRepo\DBFlowTest\app\build\outputs\apk\"
 
 deployment:
   develop:
