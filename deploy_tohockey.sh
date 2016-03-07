@@ -8,8 +8,8 @@ then
 NOTES="$1"
 fi
 
-
-if [  ­e "app/build/outputs/apkapp-production-debug.apk" ]
+file ="app/build/outputs/apkapp-production-debug.apk"
+if [  ­e  $file]
 then
 echo "Uploading to HockeyApp..."
 curl \
