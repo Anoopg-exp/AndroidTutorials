@@ -1,6 +1,3 @@
-cache_directories:
-­ ~/.android
-­ ~/.gradle
 override:
 ­ ./gradlew dependencies
 
