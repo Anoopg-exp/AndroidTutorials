@@ -1,6 +1,3 @@
-environment:
-GRADLE_OPTS: '­Dorg.gradle.jvmargs="­Xmx2048m machine:
-
 dependencies:
 pre:
 ­ echo y | android update sdk ­­no­ui ­­all ­­filter
