@@ -7,7 +7,7 @@ if [ "$1" ]
 then
 NOTES="$1"
 fi
-if [  ­f "app/build/outputs/apkapp-production-debug.apk" ]
+if [  ­s "app/build/outputs/apkapp-production-debug.apk" ]
 then
 echo "Uploading to HockeyApp..."
 curl \
