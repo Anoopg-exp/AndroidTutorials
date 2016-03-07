@@ -9,7 +9,7 @@ NOTES="$1"
 fi
 
 file ="app/build/outputs/apk/app-production-debug.apk"
-if [  ­e  $file]
+if [  ­f  $file]
 then
 echo "Uploading to HockeyApp..."
 
