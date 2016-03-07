@@ -1,7 +1,3 @@
-dependencies:
-pre:
-­ chmod +x gradlew
-
 cache_directories:
 ­ ~/.android
 ­ ~/.gradle
