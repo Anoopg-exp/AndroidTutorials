@@ -1,8 +1,5 @@
 dependencies:
 pre:
-­ echo y | android update sdk ­­no­ui ­­all ­­filter
-platform­tools,tools,android­23,build­tools­23.0.1,extra­android­m2repository,extra­android­support,extra­goog
-le­m2repository
 ­ chmod +x gradlew
 
 cache_directories:
