@@ -7,9 +7,9 @@ if [ "$1" ]
 then
 NOTES="$1"
 fi
-if [ ! ­f "app/build/outputs/apk/app-production-debug.apk" ]
+if [ ! ­f "app/build/outputs/apkapp-production-debug.apk" ]
 then
-echo "app/build/outputs/apk/app-production-debug.apk not found!"
+echo "app/build/outputs/apkapp-production-debug.apk not found!"
 else
 echo "Uploading to HockeyApp..."
 
