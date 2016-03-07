@@ -11,5 +11,5 @@ deployment:
   develop:
     branch: develop
     commands:
-      - sudo bash ./deploy_dev.sh
+      - sudo bash ./deploy_tohockey.sh
 
