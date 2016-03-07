@@ -9,10 +9,9 @@ NOTES="$1"
 fi
 
 file ="app/build/outputs/apk/app-production-debug.apk"
-if [  ­f  $file]
+if [-e  $file]
 then
 echo "Uploading to HockeyApp..."
-
 else
 echo "app/build/outputs/apk/app-production-debug.apk not found!"
 fi
